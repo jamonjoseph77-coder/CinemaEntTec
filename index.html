@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080b12"><meta name="description" content="Cinema Marketplace — stories, partnerships and Digital Box Office opportunities.">
+<title>Cinema Marketplace — Experience The World Of Stories</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+<aside class="sidebar" id="sidebar">
+  <a class="brand" href="#" data-page="marketplace"><span class="brand-mark">C</span><span><b>CINEMA</b><small>MARKETPLACE</small></span></a>
+  <div class="workspace"><span class="avatar">CM</span><span><b>Marketplace</b><small>Demo Workspace</small></span><span class="chevron">⌄</span></div>
+  <p class="nav-label">DISCOVER</p>
+  <nav class="nav">
+    <button class="nav-item active" data-page="marketplace">⌂ <span>Marketplace</span></button>
+    <button class="nav-item" data-page="digitalboxoffice">▣ <span>Digital Box Office</span></button>
+    <button class="nav-item" data-page="brands">◈ <span>Brand Directory</span></button>
+    <button class="nav-item" data-page="publishers">▤ <span>Studios & Publishers</span></button>
+  </nav>
+  <p class="nav-label">YOUR WORKSPACE</p>
+  <nav class="nav">
+    <button class="nav-item" data-page="saved">♡ <span>Saved Opportunities</span><i id="saved-count">0</i></button>
+    <button class="nav-item" data-page="enquiries">↗ <span>Enquiries</span></button>
+    <button class="nav-item" data-page="briefs">✎ <span>Brand Briefs</span></button>
+    <button class="nav-item" data-page="integrations">⌘ <span>Integrations</span></button>
+  </nav>
+  <div class="sidebar-bottom"><div class="help-card"><b>Have A Partnership Idea?</b><p>Put your campaign brief in front of the Cinema ecosystem.</p><button class="small-primary" data-action="new-brief">Create A Brief ↗</button></div><div class="user-mini"><span class="avatar">JD</span><span><b>Demo User</b><small>Brand Workspace</small></span><span class="more">•••</span></div></div>
+</aside>
+<main class="main">
+<header class="topbar"><button class="mobile-menu" id="menu">☰</button><div class="crumb">Cinema <span>/</span> <b id="crumb">Marketplace</b></div><div class="top-actions"><button class="icon-btn" title="Notifications" id="notifications">♧</button><span class="avatar small">JD</span></div></header>
+<section class="page" id="page"></section>
+<footer> <span>© 2026 Cinema Marketplace</span><span>Experience The World Of Stories <i>•</i> Independent Demo Environment</span></footer>
+</main>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<div class="modal-backdrop" id="modal"><div class="modal" role="dialog" aria-modal="true"><button class="modal-close" data-action="close">×</button><div id="modal-content"></div></div></div>
+<script src="app.js"></script>
+</body></html>
