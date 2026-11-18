@@ -35,3 +35,5 @@ function wire(){$$("#page [data-page]").forEach(b=>b.onclick=()=>setPage(b.datas
 $$(".nav-item").forEach(b=>b.onclick=()=>setPage(b.dataset.page));$("#menu").onclick=()=>$("#sidebar").classList.toggle("open");$("#notifications").onclick=()=>toast("You are all caught up in this demo.");$("#modal").onclick=e=>{if(e.target.id==="modal")closeModal()};document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});render();
 
 document.addEventListener("click",e=>{if(e.target.closest(".modal-close")||e.target.matches('[data-action="close"]'))closeModal()});
+
+document.addEventListener("click",e=>{const enquire=e.target.closest("#modal [data-enquire]");if(enquire){enquiryForm(+enquire.dataset.enquire);return}const save=e.target.closest("#modal [data-save]");if(save){const id=+save.dataset.save;state.saved=state.saved.includes(id)?state.saved.filter(x=>x!==id):[...state.saved,id];localStorage.setItem("cinemaSaved",JSON.stringify(state.saved));closeModal();render();toast(state.saved.includes(id)?"Opportunity saved.":"Opportunity removed from saved.");return}});
